@@ -2,33 +2,60 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-header h1 {
-  text-align: center;
+body {
+  background-color: #293390;
 }
+
+.container-logo{
+  width: 300px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #000;
   margin-top: 50px;
   height: 300px;
 }
 
 #nova-tarefa{
   margin-top: 10px;
-  border: 1px solid #000;
+  margin-left: 100px;
   width: 450px;
   height: 40px;
   text-align: center;
 }
 
-#nova-tarefa input {
-  margin-top: 10px;
+/*botao adicionar tarefa*/
+.container #nova-tarefa #adicionar{
+  padding: 10px;
+  margin-left: 30px;
+  border: none;
+  font-weight: bold;
+  background-color: rgb(188, 228, 255);
+}
+.container #nova-tarefa #adicionar:hover {
+  cursor: pointer;
+  background-color: rgb(68, 180, 255);
 }
 
+/*Input tarefa*/
+.container #nova-tarefa input {
+  border: 1px solid #00000070;
+  width: 300px;
+  border-radius: 15px;
+  padding: 7px;
+}
+
+
+/*novas tarefas adicionadas*/
 .container #tarefas{
   line-height: 40px;
   text-align: center;
@@ -36,33 +63,76 @@ header h1 {
   height: 40px;
   margin-top: 20px;
   position: relative;
+  color: #fff;
+
 }
 
 /*nome da nova tarefa criada*/
 #nome-da-tarefa{
   cursor: pointer;
-
+  padding: 5px 50px;
+  width: 300px;
+  background-color: white;
+  color: #000;
+  white-space: normal;
+  border: 1px solid #000;
+  margin-right: 20px;
 }
+
+/*novo-input - Input que aparece ao clicar para modificar a tarefa*/
+#novo-input {
+  border: 1px solid #00000070;
+  width: 180px;
+  border-radius: 15px;
+  padding: 7px;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
 
 .container #tarefas .delete {
   background-color: red;
-  padding: 5px 10px;
+  padding: 6px 10px;
   border: none;
   cursor: pointer;
-  position: absolute;
   right: 0;
   margin-top: 6px;
+  margin-right: 5px;
 }
 .container #tarefas .mark{
   padding: 5px 10px;
   background-color: rgb(47, 255, 57);
   border: none;
   cursor: pointer;
-  position: absolute;
   right: 50px;
+  margin-top: 6px;
+  margin-right: 5px;
+}
+
+/*Input de atualização do to-do, estava gerando erro pegando a mesma classe .mark, então criei essa classe separada para estilizar*/
+.mark-2{
+  padding: 5px 10px;
+  background-color: rgb(47, 255, 57);
+  border: none;
+  cursor: pointer;
+}
+
+
+.container #tarefas .pen{
+  padding: 6px 10px;
+  background-color: rgb(29, 28, 28);
+  border: none;
+  cursor: pointer;
+  right: 100px;
   margin-top: 6px;
 }
 
 .completed {
   text-decoration: line-through;
+}
+
+
+/*esconder div de edição*/
+.hide {
+  display: none;
 }
