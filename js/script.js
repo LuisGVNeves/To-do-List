@@ -10,7 +10,8 @@ document.querySelector("#adicionar").onclick = function(){
       <span id="nome-da-tarefa">
         ${document.querySelector("#nova-tarefa input").value}
       </span>
-      <button class="delete">X</button>
+      <button class="delete">❌</button>
+      <button class="mark">✅</button>
     </div>
     `;
 
@@ -21,10 +22,12 @@ document.querySelector("#adicionar").onclick = function(){
       }
     }
 
+    // Assim que o botão mark for clicado, vou percorrer as divs que contém nome-da-tarefa e vou adicionar a classe 'completed'
+    
     let tarefa = document.querySelectorAll('#nome-da-tarefa');
     for(let i =0; i < tarefa.length; i++){
-      tarefa[i].onclick = () => {
-        this.classList.toggle('completed');
+      document.querySelector('.mark').onclick = () => {
+        tarefa[i].classList.toggle('completed');
       }
     }
 

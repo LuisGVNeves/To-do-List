@@ -28,3 +28,41 @@ header h1 {
 #nova-tarefa input {
   margin-top: 10px;
 }
+
+.container #tarefas{
+  line-height: 40px;
+  text-align: center;
+  width: 450px;
+  height: 40px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/*nome da nova tarefa criada*/
+#nome-da-tarefa{
+  cursor: pointer;
+
+}
+
+.container #tarefas .delete {
+  background-color: red;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-top: 6px;
+}
+.container #tarefas .mark{
+  padding: 5px 10px;
+  background-color: rgb(47, 255, 57);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+  margin-top: 6px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
