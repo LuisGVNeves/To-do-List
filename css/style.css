@@ -58,7 +58,6 @@ body {
 /*novas tarefas adicionadas*/
 .container #tarefas{
   line-height: 40px;
-  text-align: center;
   width: 700px;
   height: 40px;
   margin-top: 20px;
@@ -69,13 +68,12 @@ body {
 /*nome da nova tarefa criada*/
 #nome-da-tarefa{
   cursor: pointer;
-  padding: 5px 50px;
-  width: 300px;
+  margin-left: 150px;
+  margin-right: 50px;
+  padding: 5px ;
   background-color: white;
   color: #000;
-  white-space: normal;
   border: 1px solid #000;
-  margin-right: 20px;
   border-radius: 20px;
 }
 
@@ -87,6 +85,7 @@ body {
   padding: 7px 1px;
   margin-top: 40px;
   margin-right: 20px;
+  margin-left: 150px;
 }
 
 
@@ -95,12 +94,14 @@ body {
   padding: 6px 10px;
   border: none;
   cursor: pointer;
+  position: absolute;
   right: 0;
   margin-top: 6px;
   margin-right: 5px;
 }
 .container #tarefas .mark{
   padding: 5px 10px;
+  position: absolute;
   background-color: rgb(47, 255, 57);
   border: none;
   cursor: pointer;
@@ -120,11 +121,14 @@ body {
 
 .container #tarefas .pen{
   padding: 6px 10px;
+  position: absolute;
   background-color: rgb(29, 28, 28);
   border: none;
   cursor: pointer;
   right: 100px;
   margin-top: 6px;
+  margin-right: 5px;
+
 }
 
 .completed {
